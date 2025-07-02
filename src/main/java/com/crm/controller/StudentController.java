@@ -75,5 +75,10 @@ public class StudentController {
         studentService.getAllSTudent();
         return null;
     }
+
+    @GetMapping("/by-email")
+    public Student getStudentByEmail(String email){
+        studentService.getByEmail(email);
+    }
 }
 

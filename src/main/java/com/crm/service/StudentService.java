@@ -95,4 +95,7 @@ public class StudentService {
     }
 
 
+    public Student getByEmail(String email) {
+        return studentRepository.getByEmail(email);
+    }
 }
