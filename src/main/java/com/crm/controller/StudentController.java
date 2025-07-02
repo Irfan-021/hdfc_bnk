@@ -73,6 +73,7 @@ public class StudentController {
 
     public ResponseEntity<List<StudentDTO>> getAllSTudent(){
         studentService.getAllSTudent();
+        return null;
     }
 }
 
