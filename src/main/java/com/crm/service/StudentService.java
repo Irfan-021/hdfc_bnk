@@ -88,6 +88,7 @@ public class StudentService {
     }
 
     public List<StudentDTO> getAllSTudent() {
+        // add comment here
         List<Student> all = studentRepository.findAll();
         List<StudentDTO> collect = all.stream().map(this::mapToDTO).collect(Collectors.toList());
         return collect;
